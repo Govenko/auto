@@ -1,7 +1,7 @@
 /* ==========================================================================
    Fancybox 6 (@fancyapps/ui) initialisation
    — Lightbox for photo galleries
-   — Inline modal popups (feedback / callback form) replacing legacy popups
+   — Inline modal popups (section_forma / callback form) replacing legacy popups
    Sliders use a lightweight native CSS scroll-snap track (see initCarousels
    below) — Fancybox itself is reserved for the lightbox/modal role it is
    built for.

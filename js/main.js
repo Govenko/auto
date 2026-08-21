@@ -63,7 +63,7 @@
   });
 
   /* Mobile submenu accordions */
-  qsa('.mobile_menu li.has_sub > a').forEach(function (a) {
+  qsa('.mobile_menu li.menu_sub > a').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
       var li = a.parentElement;
@@ -76,7 +76,7 @@
   });
 
   /* -------------------- Desktop dropdown nav -------------------- */
-  var navItems = qsa('.top_menu li.has_sub');
+  var navItems = qsa('.top_menu li.menu_sub');
   navItems.forEach(function (li) {
     var trigger = qs(':scope > a', li);
     var closeTimer;
@@ -100,7 +100,7 @@
   });
 
   /* -------------------- Header phone dropdown -------------------- */
-  var phoneWraps = qsa('.head_top_phone_wrap');
+  var phoneWraps = qsa('.head_top_phone_block');
   function closeAllPhonePanels() { phoneWraps.forEach(function (w) { w.classList.remove('is_open'); }); }
   phoneWraps.forEach(function (wrap) {
     var btn = qs('.head_top_phone_btn', wrap);
@@ -113,7 +113,7 @@
     });
   });
   document.addEventListener('click', function (e) {
-    if (!e.target.closest('.head_top_phone_wrap')) closeAllPhonePanels();
+    if (!e.target.closest('.head_top_phone_block')) closeAllPhonePanels();
   });
 
   /* -------------------- Search overlay -------------------- */
@@ -131,7 +131,7 @@
 
   /* -------------------- Accordion (FAQ) -------------------- */
   qsa('.accordion_item').forEach(function (item) {
-    var head = qs('.accordion_head', item);
+    var head = qs('.accordion_name', item);
     if (!head) return;
     head.addEventListener('click', function () {
       var isOpen = item.classList.contains('is_open');
@@ -148,7 +148,7 @@
     toggle.addEventListener('click', function (e) {
       e.preventDefault();
       e.stopPropagation();
-      var li = toggle.closest('.has_sub');
+      var li = toggle.closest('.menu_sub');
       if (li) li.classList.toggle('is_open');
     });
   });
@@ -228,7 +228,7 @@
   }
 
   /* Close mobile menu / search on nav link click */
-  qsa('.mobile_menu a:not(.has_sub > a)').forEach(function (a) {
+  qsa('.mobile_menu a:not(.menu_sub > a)').forEach(function (a) {
     a.addEventListener('click', function () { closeMobileMenu(); });
   });
 })();
