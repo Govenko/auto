@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTOSERVICE — Ремонт автомобилей с гарантией 1 год в Самаре</title>
+  <meta name="description" content="Автосервис полного цикла в Самаре: ремонт, диагностика, ТО, шиномонтаж. Гарантия 1 год или 20 000 км. Запишитесь на бесплатную диагностику!">
+  <meta name="theme-color" content="#121212">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AUTOSERVICE — Ремонт автомобилей с гарантией">
+  <meta property="og:description" content="Профессиональный автосервис в Самаре. Гарантия 1 год, новейшее оборудование, опытные мастера.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/og-image.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "AUTOSERVICE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Балаковская 68",
+      "addressLocality": "Самара",
+      "addressCountry": "RU"
+    },
+    "telephone": "+79779777799",
+    "email": "info@autoservice.ru",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">AUTO<span>SERVICE</span></a>
+    
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Главная</a></li>
+        <li><a href="uslugi.html" class="nav-link">Услуги</a></li>
+        <li><a href="#about" class="nav-link">О нас</a></li>
+        <li><a href="#gallery" class="nav-link">Галерея</a></li>
+        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+      </ul>
+      
+      <div class="header-contacts">
+        <a href="tel:+79779777799" class="phone">+7 (977) 977-77-99</a>
+        <span class="phone-subtitle">Шиномонтаж</span>
+      </div>
+      
+      <div class="header-actions">
+        <a href="#appointment" class="btn btn-primary">Запись на ТО</a>
+        <a href="#callback" class="btn btn-outline">Заказать звонок</a>
+        
+        <div class="socials">
+          <a href="https://t.me/" target="_blank" rel="noopener" class="social-link telegram" aria-label="Telegram">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
+          </a>
+          <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link vk" aria-label="VKontakte">
+            <svg viewBox="0 0 576 512" fill="currentColor"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+          </a>
+          <a href="https://whatsapp.com/" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.1-29-27.7-62.5-27.7-97.3 0-100.2 81.5-181.7 181.7-181.7 48.5 0 94.2 18.9 128.5 53.2 34.3 34.3 53.2 80 53.2 128.5 0 100.2-81.5 181.7-181.7 181.7zm99.6-100.1c-5.5-2.7-32.4-15.9-37.4-17.8-5-1.8-8.6-2.7-12.3 2.7-3.6 5.4-14.1 17.8-17.3 21.5-3.2 3.6-6.4 4.1-11.8 1.4-5.4-2.7-22.9-8.4-43.6-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11.1 2.5-2.5 5.4-6.4 8.1-9.6 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6.9-6.8-.4-9.6-1.4-2.7-12.3-29.6-16.8-40.4-4.4-10.6-8.9-9.1-12.3-9.3-3.2-.2-6.8-.2-10.5-.2-3.6 0-9.6 1.4-14.6 6.8-5 5.4-19.3 18.9-19.3 46.1 0 27.2 19.9 53.6 22.6 57.2 2.7 3.6 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.9-1.6 32.4-13.2 37-26 4.5-12.8 4.5-23.8 3.2-26-1.3-2.3-4.9-3.7-10.4-6.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    <button class="hamburger" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html" class="mobile-nav-link">Главная</a>
+    <a href="uslugi.html" class="mobile-nav-link">Услуги</a>
+    <a href="#about" class="mobile-nav-link">О нас</a>
+    <a href="#gallery" class="mobile-nav-link">Галерея</a>
+    <a href="#contacts" class="mobile-nav-link">Контакты</a>
+  </nav>
+</div>
+<a href="tel:+79779777799" class="mobile-call-btn">Позвонить</a>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content fade-in-up">
+        <h1 class="hero-title">Ремонт автомобилей с гарантией 1 год или 20 000 км</h1>
+        
+        <div class="hero-benefits">
+          <div class="hero-benefit">
+            <svg class="hero-benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Бесплатная диагностика при ремонте</span>
+          </div>
+          <div class="hero-benefit">
+            <svg class="hero-benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Консультация специалиста</span>
+          </div>
+          <div class="hero-benefit">
+            <svg class="hero-benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Комфортная зона ожидания с Wi-Fi и кофе</span>
+          </div>
+        </div>
+        
+        <a href="#appointment" class="btn btn-primary" style="padding: 16px 32px; font-size: 16px;">Записаться на СТО</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="fade-in-up">
+        <h2>О нашем автосервисе</h2>
+        <p style="max-width: 800px; margin-bottom: 32px;">
+          Мы работаем на рынке автомобильных услуг более 10 лет. 80% наших клиентов возвращаются к нам снова и рекомендуют друзьям. 
+          Прозрачное ценообразование, современное оборудование и команда опытных мастеров — залог качественного ремонта вашего автомобиля.
+          Возможен выезд мастера для диагностики на месте.
+        </p>
+      </div>
+      
+      <!-- Advantages -->
+      <div class="advantages-grid" style="margin-top: 60px;">
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">💰</div>
+          <h3 class="advantage-title">Доступные цены</h3>
+          <p class="advantage-text">от 300 руб.</p>
+        </div>
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">🚗</div>
+          <h3 class="advantage-title">Все марки авто</h3>
+          <p class="advantage-text">Работаем с любыми автомобилями</p>
+        </div>
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">🔧</div>
+          <h3 class="advantage-title">Новейшее оборудование</h3>
+          <p class="advantage-text">Современные диагностические сканеры</p>
+        </div>
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">🛡️</div>
+          <h3 class="advantage-title">Гарантия 1 год</h3>
+          <p class="advantage-text">На работы и оригинальные запчасти</p>
+        </div>
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">👨‍🔧</div>
+          <h3 class="advantage-title">Опытные сотрудники</h3>
+          <p class="advantage-text">Сертифицированные мастера</p>
+        </div>
+        <div class="advantage-card fade-in-up">
+          <div class="advantage-icon">📦</div>
+          <h3 class="advantage-title">Склад запчастей</h3>
+          <p class="advantage-text">В наличии популярные запчасти</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section with Tabs -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Наши услуги</h2>
+      
+      <div class="services-tabs fade-in-up">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-filter="all">Все</button>
+          <button class="tab-btn" data-filter="to">ТО</button>
+          <button class="tab-btn" data-filter="diagnostics">Диагностика</button>
+          <button class="tab-btn" data-filter="repair">Ремонт</button>
+          <button class="tab-btn" data-filter="legal">Юр. лица</button>
+          <button class="tab-btn" data-filter="tires">Шиномонтаж</button>
+          <button class="tab-btn" data-filter="parts">Запчасти</button>
+        </div>
+        
+        <div class="services-grid">
+          <a href="diagnostika.html" class="service-card" data-category="diagnostics">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">🔍</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Диагностика автомобиля</h3>
+              <p class="service-card-desc">Комплексная компьютерная диагностика всех систем автомобиля</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+          
+          <a href="diagnostika.html" class="service-card" data-category="to">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">🛢️</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Техническое обслуживание</h3>
+              <p class="service-card-desc">Замена масла, фильтров, технических жидкостей по регламенту</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+          
+          <a href="diagnostika.html" class="service-card" data-category="repair">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">⚙️</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Ремонт двигателя</h3>
+              <p class="service-card-desc">Капитальный и текущий ремонт бензиновых и дизельных двигателей</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+          
+          <a href="diagnostika.html" class="service-card" data-category="repair">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">🚙</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Ремонт подвески</h3>
+              <p class="service-card-desc">Диагностика и ремонт ходовой части, замена рычагов, сайлентблоков</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+          
+          <a href="diagnostika.html" class="service-card" data-category="tires">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">🔩</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Шиномонтаж</h3>
+              <p class="service-card-desc">Сезонная замена шин, балансировка, ремонт проколов</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+          
+          <a href="diagnostika.html" class="service-card" data-category="legal">
+            <div class="service-card-image">
+              <div style="font-size: 64px; color: var(--accent);">📋</div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Для юридических лиц</h3>
+              <p class="service-card-desc">Обслуживание корпоративных автопарков, безналичный расчет</p>
+              <span class="service-card-link">Подробнее →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Brands -->
+  <section class="section brands-section">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Обслуживаем все марки</h2>
+      <div class="brands-grid">
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">BMW</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">MERCEDES</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">AUDI</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">TOYOTA</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">HONDA</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">FORD</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">NISSAN</text></svg>
+        </div>
+        <div class="brand-item fade-in-up">
+          <svg class="brand-logo" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/><text x="50" y="55" text-anchor="middle" font-size="20">HYUNDAI</text></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Фотогалерея</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 1%3C/text%3E%3C/svg%3E" alt="Фото мастерской" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 2%3C/text%3E%3C/svg%3E" alt="Оборудование" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 3%3C/text%3E%3C/svg%3E" alt="Зона ожидания" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 4%3C/text%3E%3C/svg%3E" alt="Команда мастеров" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 5%3C/text%3E%3C/svg%3E" alt="Ремонт двигателя" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in-up">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231E1E1E' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'%3EWorkshop Photo 6%3C/text%3E%3C/svg%3E" alt="Диагностика" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Отзывы клиентов</h2>
+      
+      <div class="reviews-slider fade-in-up">
+        <div class="reviews-track">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">👤</div>
+              <div class="review-info">
+                <h4>Александр Петров</h4>
+                <div class="review-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">«Отличный сервис! Делал диагностику подвески, нашли проблему быстро. Мастер Алексей всё объяснил, показал изношенные детали. Цены адекватные, рекомендую!»</p>
+            <p class="review-master">Мастер: Алексей</p>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">👤</div>
+              <div class="review-info">
+                <h4>Дмитрий Иванов</h4>
+                <div class="review-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">«Обслуживаю здесь свой BMW уже третий год. Нравится прозрачность — всегда показывают старые детали, объясняют что нужно делать срочно, а что может подождать.»</p>
+            <p class="review-master">Мастер: Сергей</p>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">👤</div>
+              <div class="review-info">
+                <h4>Елена Смирнова</h4>
+                <div class="review-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">«Как девушке в автосервисе бывает сложно, но здесь всё понятно объяснили, не пытались навязать лишние услуги. Очень вежливый персонал!»</p>
+            <p class="review-master">Мастер: Игорь</p>
+          </div>
+        </div>
+        
+        <div class="slider-controls">
+          <button class="slider-btn prev" aria-label="Предыдущий отзыв">←</button>
+          <button class="slider-btn next" aria-label="Следующий отзыв">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Частые вопросы</h2>
+      
+      <div class="faq-list">
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Как записаться на сервис?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Вы можете записаться по телефону +7 (977) 977-77-99, через форму на сайте или просто приехать в рабочее время. Мы рекомендуем предварительную запись для экономии вашего времени.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Сколько времени занимает ремонт?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Время ремонта зависит от сложности работ. Замена масла — 30-40 минут, диагностика — 1-2 часа, сложный ремонт двигателя — от 1 дня. Точные сроки сообщит мастер после осмотра.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Какая гарантия на работы?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Мы предоставляем гарантию 1 год или 20 000 км пробега на все виды работ и установленные запчасти. Гарантия действует при условии соблюдения рекомендаций по эксплуатации.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Можно ли присутствовать при ремонте?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Да, вы можете наблюдать за ремонтом в специальной зоне. Для безопасности доступ в рабочую зону ограничен, но мы всегда готовы показать процесс и ответить на вопросы.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Есть ли зона ожидания?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              У нас комфортная зона ожидания с Wi-Fi, телевизором, кофемашиной. Вы можете поработать или отдохнуть, пока мы обслуживаем ваш автомобиль.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-up">
+          <button class="faq-question">
+            Какие способы оплаты принимаете?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Принимаем наличные, банковские карты (Visa, MasterCard, МИР), безналичный расчет для юридических лиц. Возможна оплата частями для крупных ремонтов.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts" class="section contacts-section">
+    <div class="container">
+      <h2 class="fade-in-up" style="text-align: center; margin-bottom: 40px;">Контакты</h2>
+      
+      <div class="contacts-wrapper">
+        <div class="map-container fade-in-up">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=50.135107%2C53.241511&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ0NTYwMRJG0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0J_RgNC-0YHQvdC40Y8g0L_Qu9C40YbCwNC90LjRhtC-0LLQviwgNjgiCg3ZmAFBFvPEFC&amp;z=16.63" width="100%" height="400" frameborder="0" allowfullscreen="true" loading="lazy" title="Карта проезда"></iframe>
+        </div>
+        
+        <div class="contact-info fade-in-up">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <h4>Адрес</h4>
+              <p>Самара, ул. Балаковская 68</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Телефоны</h4>
+              <p><a href="tel:+79779777799">+7 (977) 977-77-99</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p><a href="mailto:info@autoservice.ru">info@autoservice.ru</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-text">
+              <h4>Режим работы</h4>
+              <p>Пн-Пт: 9:00-18:00<br>Сб-Вс: выходной</p>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <form class="form contact-form" id="appointment" style="margin-top: 32px;">
+            <h3 style="margin-bottom: 20px;">Получить консультацию</h3>
+            
+            <div class="form-group">
+              <input type="text" class="form-input" id="name" placeholder=" " required>
+              <label for="name" class="form-label">Ваше имя</label>
+              <span class="form-error">Обязательное поле</span>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" class="form-input" id="phone" placeholder=" " required>
+              <label for="phone" class="form-label">Телефон</label>
+              <span class="form-error">Обязательное поле</span>
+            </div>
+            
+            <div class="form-group">
+              <select class="form-select" id="service" required>
+                <option value="">Выберите услугу</option>
+                <option value="diagnostics">Диагностика</option>
+                <option value="to">Техническое обслуживание</option>
+                <option value="repair">Ремонт</option>
+                <option value="tires">Шиномонтаж</option>
+                <option value="other">Другое</option>
+              </select>
+              <label for="service" class="form-label">Услуга</label>
+              <span class="form-error">Обязательное поле</span>
+            </div>
+            
+            <div class="form-checkbox">
+              <input type="checkbox" id="consent" required>
+              <label for="consent">Я согласен на обработку <a href="#">персональных данных</a></label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">AUTO<span>SERVICE</span></div>
+        <p class="footer-desc">Профессиональный автосервис в Самаре. Качественный ремонт, диагностика и обслуживание автомобилей всех марок.</p>
+        <div class="socials">
+          <a href="https://t.me/" target="_blank" rel="noopener" class="social-link telegram" aria-label="Telegram">
+            <svg viewBox="0 0 448 512" fill="currentColor" style="width: 20px; height: 20px;"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
+          </a>
+          <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link vk" aria-label="VKontakte">
+            <svg viewBox="0 0 576 512" fill="currentColor" style="width: 20px; height: 20px;"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+          </a>
+          <a href="https://whatsapp.com/" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 448 512" fill="currentColor" style="width: 20px; height: 20px;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.1-29-27.7-62.5-27.7-97.3 0-100.2 81.5-181.7 181.7-181.7 48.5 0 94.2 18.9 128.5 53.2 34.3 34.3 53.2 80 53.2 128.5 0 100.2-81.5 181.7-181.7 181.7zm99.6-100.1c-5.5-2.7-32.4-15.9-37.4-17.8-5-1.8-8.6-2.7-12.3 2.7-3.6 5.4-14.1 17.8-17.3 21.5-3.2 3.6-6.4 4.1-11.8 1.4-5.4-2.7-22.9-8.4-43.6-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11.1 2.5-2.5 5.4-6.4 8.1-9.6 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6.9-6.8-.4-9.6-1.4-2.7-12.3-29.6-16.8-40.4-4.4-10.6-8.9-9.1-12.3-9.3-3.2-.2-6.8-.2-10.5-.2-3.6 0-9.6 1.4-14.6 6.8-5 5.4-19.3 18.9-19.3 46.1 0 27.2 19.9 53.6 22.6 57.2 2.7 3.6 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.9-1.6 32.4-13.2 37-26 4.5-12.8 4.5-23.8 3.2-26-1.3-2.3-4.9-3.7-10.4-6.4z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Быстрые ссылки</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Главная</a></li>
+          <li><a href="uslugi.html" class="footer-link">Услуги</a></li>
+          <li><a href="#about" class="footer-link">О нас</a></li>
+          <li><a href="#gallery" class="footer-link">Галерея</a></li>
+          <li><a href="#contacts" class="footer-link">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Контакты</h4>
+        <div class="footer-contact">
+          <strong>Адрес:</strong>
+          Самара, ул. Балаковская 68
+        </div>
+        <div class="footer-contact">
+          <strong>Телефон:</strong>
+          <a href="tel:+79779777799">+7 (977) 977-77-99</a>
+        </div>
+        <div class="footer-contact">
+          <strong>Email:</strong>
+          <a href="mailto:info@autoservice.ru">info@autoservice.ru</a>
+        </div>
+        <div class="footer-contact">
+          <strong>Режим работы:</strong>
+          Пн-Пт: 9:00-18:00
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Соцсети</h4>
+        <ul class="footer-links">
+          <li><a href="https://t.me/" target="_blank" rel="noopener" class="footer-link">Telegram</a></li>
+          <li><a href="https://vk.com/" target="_blank" rel="noopener" class="footer-link">ВКонтакте</a></li>
+          <li><a href="https://whatsapp.com/" target="_blank" rel="noopener" class="footer-link">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2024 AUTOSERVICE. Все права защищены.</p>
+      <a href="#" class="footer-policy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
