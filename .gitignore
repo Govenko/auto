@@ -1,86 +1,45 @@
 ```
-# Build artifacts
-var2/css/*.css
-var2/js/*.js
-var2/fonts/
-var2/img/
+# Build artifacts and generated files
+var2/css/vendor/
+var2/js/vendor/
+var2/dist/
+var2/build/
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Cache directories
+var2/.cache/
+var2/cache/
 
-# Log files
+# Logs
 *.log
-
-# Temporary files
-*.tmp
-*.swp
-*.swo
-
-# OS specific
-.DS_Store
-Thumbs.db
 
 # Environment files
 .env
 .env.local
 *.env.*
 
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
 # Coverage reports
 coverage/
 htmlcov/
 .coverage
 
-# IDE specific
-.vscode/
-.idea/
-
-# Python specific
+# Dependency directories
+node_modules/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.so
-*.egg-info/
-.Python
-*.pot
-*.po
-*~
-.pytest_cache/
 .mypy_cache/
-.tox/
-.coverage*
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/
-.hg/
-.svn/
-.wafpickle-*
-build/
-.sconsign.dblite
-.pip-delete-this-directory.txt
-.pydevproject
-.vscode/settings.json
+.pytest_cache/
+.venv/
+venv/
+target/
+.gradle/
 ```
