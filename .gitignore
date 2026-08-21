@@ -1,6 +1,1 @@
-# Examples where no ignores are needed:
-# HTML files like about.html, kontaktyi.html, news.html, uslugi.html are source code files
-# No build artifacts, dependencies, or temp files detected in changes
-# Current .gitignore is empty and no new ignores are needed
-
-# Therefore, output remains empty
+Nothing should be ignored based on the provided file changes. The only modified file is 'uslugi-diagnostika.html', which is a source file and should not be added to .gitignore. Since there are no build artifacts, dependencies, or temporary files in the changes, no additional ignore rules are needed.
