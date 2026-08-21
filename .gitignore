@@ -1,50 +1,9 @@
 ```
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-dist/
-build/
-*.class
-*.exe
-*.dll
-*.so
-*.a
-*.out
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-.mypy_cache/
-.pytest_cache/
-target/
-.gradle/
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
+# Build artifacts
+var2/css/*.css
+var2/js/*.js
+var2/fonts/
+var2/img/
 
 # Compressed files
 *.zip
@@ -69,4 +28,59 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# IDE specific
+.vscode/
+.idea/
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.Python
+*.pot
+*.po
+*~
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage*
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
+.hg/
+.svn/
+.wafpickle-*
+build/
+.sconsign.dblite
+.pip-delete-this-directory.txt
+.pydevproject
+.vscode/settings.json
 ```
