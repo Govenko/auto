@@ -1366,7 +1366,7 @@ li.is_open > .nav_dropdown {
 
 .category_left {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 400px 1fr;
   gap: 40px;
 }
 
@@ -2294,7 +2294,7 @@ li.is_open > .nav_dropdown {
   }
 
   .category_left {
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .category_sidebar {
