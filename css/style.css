@@ -533,12 +533,14 @@ textarea.form_field {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
 }
 
 .nav_dropdown.dop_razdel_manu > div {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 
 .nav_dropdown.dop_razdel_manu .nav_dropdown_name_razdela {
@@ -548,7 +550,9 @@ textarea.form_field {
   color: var(--color-accent);
   font-weight: 700;
   padding: 8px 0 4px;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 280px;
 }
 
 li.is_open > .nav_dropdown {
@@ -1142,29 +1146,6 @@ li.is_open > .nav_dropdown {
   flex-shrink: 0;
 }
 
-.home_slid_preim2 {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.home_slid_preim2 .preim2 {
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: var(--radius-md);
-  padding: 20px 22px;
-}
-
-.home_slid_preim2 .preim2_name {
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.home_slid_preim2 .preim2_slogan {
-  font-size: 13px;
-  color: var(--color-text-muted);
-}
-
 .page_top {
   padding: 20px 0 10px;
 }
@@ -1653,14 +1634,14 @@ li.is_open > .nav_dropdown {
   box-shadow: var(--shadow-card);
   transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
   display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: 80px 1fr;
+  gap: 20px;
+  align-items: center;
 }
 
 .preim_item .ico {
-  width: 52px;
-  height: 52px;
+  width: 80px;
+  height: 80px;
   border-radius: 14px;
   background: rgba(237,38,64,.12);
   display: flex;
@@ -1676,15 +1657,15 @@ li.is_open > .nav_dropdown {
 }
 
 .preim_item .ico img {
-  width: 26px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
   filter: brightness(0) saturate(100%) invert(30%) sepia(89%) saturate(3000%) hue-rotate(335deg);
 }
 
 .preim_item .name {
   font-weight: 700;
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .preim_item .desc {
@@ -2292,15 +2273,6 @@ li.is_open > .nav_dropdown {
 @media (max-width: 1199px) {
   .home_slid_section {
     grid-template-columns: 1fr;
-  }
-
-  .home_slid_preim2 {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .home_slid_preim2 .preim2 {
-    flex: 1 1 200px;
   }
 
   .services_block {
