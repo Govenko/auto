@@ -2298,14 +2298,7 @@ li.is_open > .nav_dropdown {
   }
 
   .category_sidebar {
-    position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .category_sidebar .side_nav,
-  .category_sidebar .side_promo {
-    flex: 1 1 260px;
+    display: none;
   }
 
   .category_right .services_block {
