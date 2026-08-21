@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест меню</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+    .test-info { background: #f0f0f0; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    .test-result { margin-top: 10px; padding: 10px; border-radius: 4px; }
+    .pass { background: #d4edda; color: #155724; }
+    .fail { background: #f8d7da; color: #721c24; }
+  </style>
+</head>
+<body>
+  <div class="test-info">
+    <h2>Тестирование выпадающего меню "Услуги"</h2>
+    <p>Наведите курсор на пункт меню <strong>"Услуги"</strong> в верхней части страницы.</p>
+    <p>Если меню появилось - тест пройден. Если нет - тест не пройден.</p>
+    <div id="result" class="test-result fail">Ожидание проверки...</div>
+  </div>
+
+  <div class="head_top">
+    <div class="wrapper head_top_line">
+      <a href="/" class="logo">AUTO<span>SERVICE</span></a>
+      <nav class="top_menu">
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li class="menu_sub">
+            <a href="uslugi.html">Услуги</a>
+            <div class="nav_dropdown dop_razdel_manu">
+              <div>
+                <div class="nav_dropdown_name_razdela"><a href="uslugi-diagnostika.html" style="color:inherit">Техническое обслуживание (ТО)</a></div>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Замена масла</a>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Обслуживание АКПП</a>
+              </div>
+              <div>
+                <div class="nav_dropdown_name_razdela"><a href="uslugi-diagnostika.html" style="color:inherit">Диагностика</a></div>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Комплексная диагностика</a>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Компьютерная диагностика</a>
+              </div>
+              <div>
+                <div class="nav_dropdown_name_razdela"><a href="uslugi-diagnostika.html" style="color:inherit">Ремонт</a></div>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Ремонт двигателя</a>
+                <a href="uslugi-diagnostika-diagnostika-xodovoj-chasti.html">Ремонт АКПП</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="/">Цены</a></li>
+          <li><a href="/">Галерея</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="kontaktyi.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    const menuSub = document.querySelector('.menu_sub');
+    const dropdown = document.querySelector('.nav_dropdown');
+    const resultDiv = document.getElementById('result');
+
+    if (menuSub && dropdown) {
+      menuSub.addEventListener('mouseenter', () => {
+        const isVisible = getComputedStyle(dropdown).visibility === 'visible';
+        const opacity = getComputedStyle(dropdown).opacity;
+        
+        if (isVisible && parseFloat(opacity) > 0) {
+          resultDiv.className = 'test-result pass';
+          resultDiv.textContent = '✓ ТЕСТ ПРОЙДЕН: Выпадающее меню отображается при наведении!';
+        } else {
+          resultDiv.className = 'test-result fail';
+          resultDiv.textContent = '✗ ТЕСТ НЕ ПРОЙДЕН: Меню не отображается. Проверьте CSS селекторы и z-index.';
+        }
+      });
+
+      menuSub.addEventListener('mouseleave', () => {
+        resultDiv.className = 'test-result fail';
+        resultDiv.textContent = 'Ожидание проверки... Наведите на "Услуги"';
+      });
+
+      console.log('Тест готов. Наведите курсор на пункт "Услуги"');
+    } else {
+      resultDiv.className = 'test-result fail';
+      resultDiv.textContent = 'Ошибка: элементы меню не найдены';
+    }
+  </script>
+</body>
+</html>
