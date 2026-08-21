@@ -527,10 +527,18 @@ textarea.form_field {
 }
 
 .nav_dropdown.dop_razdel_manu {
-  min-width: 640px;
+  min-width: 900px;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px 18px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  padding: 12px;
+}
+
+.nav_dropdown.dop_razdel_manu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .nav_dropdown.dop_razdel_manu .nav_dropdown_name_razdela {
@@ -540,6 +548,7 @@ textarea.form_field {
   color: var(--color-accent);
   font-weight: 700;
   padding: 8px 12px 4px;
+  white-space: nowrap;
 }
 
 li.is_open > .nav_dropdown {
@@ -1361,31 +1370,26 @@ li.is_open > .nav_dropdown {
   padding: 0 22px;
   border: none;
   border-radius: 12px;
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  color: #fff;
+  background: var(--color-surface-2);
+  color: var(--color-text);
   font-size: 15px;
   font-weight: 600;
-  box-shadow: 0 0 0 2px transparent;
-  transition: box-shadow var(--transition), background var(--transition);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
 }
 
 .tabs_nav button.is_active, .tabs_nav button:hover {
-  background: rgba(255,255,255,.14);
-  box-shadow: 0 0 0 2px #fff;
+  background: var(--color-accent);
+  color: #fff;
 }
 
 .category_left {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 40px;
-  align-items: start;
 }
 
 .category_sidebar {
-  position: sticky;
-  top: calc(var(--header-h) + 24px);
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1648,11 +1652,9 @@ li.is_open > .nav_dropdown {
   padding: 30px 28px;
   box-shadow: var(--shadow-card);
   transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-}
-
-.preim_item:hover {
-  border-color: var(--color-accent);
-  transform: translateY(-4px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .preim_item .ico {
@@ -1663,7 +1665,12 @@ li.is_open > .nav_dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
+}
+
+.preim_item:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
 }
 
 .preim_item .ico img {
