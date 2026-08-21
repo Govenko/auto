@@ -1,1 +1,58 @@
-Nothing needs to be added to .gitignore since the changes only include source files (HTML and CSS) without any build artifacts, dependencies, or temporary files that should be ignored.
+```html
+<!--# Compiled and build artifacts-->
+<!--*.pyc-->
+<!--*.class-->
+<!--*.o-->
+<!--*.obj-->
+<!--*.exe-->
+<!--*.dll-->
+<!--*.so-->
+<!--*.a-->
+<!--*.out-->
+<!--dist/-->
+<!--build/-->
+<!--target/-->
+
+<!--# Dependencies-->
+<!--node_modules/-->
+<!--venv/-->
+<!--.venv/-->
+<!--__pycache__/-->
+<!--.mypy_cache/-->
+<!--.pytest_cache/-->
+<!--.gradle/-->
+
+<!--# Editors and IDEs-->
+<!--.vscode/-->
+<!--.idea/-->
+<!--*.swp-->
+<!--*.swo-->
+
+<!--# System files-->
+<!--.DS_Store-->
+<!--Thumbs.db-->
+<!--.env-->
+<!--.env.local-->
+<!--*.env.*-->
+
+<!--# Logs and temp files-->
+<!--*.log-->
+<!--*.tmp-->
+<!--*.temp-->
+
+<!--# Coverage and testing-->
+<!--coverage/-->
+<!--htmlcov/-->
+<!--.coverage-->
+
+<!--# Compressed files-->
+<!--*.zip-->
+<!--*.gz-->
+<!--*.tar-->
+<!--*.tgz-->
+<!--*.bz2-->
+<!--*.xz-->
+<!--*.7z-->
+<!--*.rar-->
+<!--*.zst-->
+```

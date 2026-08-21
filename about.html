@@ -510,3 +510,29 @@
     </div>
     <div class="footer_copy">
       <div class="copyright">© 2020 – 2026 г. AUTO SERVICE</div>
+    </div>
+  </div>
+</div>
+
+<div id="section_forma" style="display:none;">
+  <div class="modal_panel">
+    <h3 data-modal-title-slot>Получить консультацию специалиста</h3>
+    <p class="modal_desc">Оставьте ваши контактные данные, и наш менеджер свяжется с вами в течение 10 минут. Форма — визуальный макет, отправка данных не выполняется.</p>
+    <form data-stub-form onsubmit="return false;">
+      <input type="hidden" name="theme" value="">
+      <input class="form_field" type="text" name="fio" placeholder="Ваше имя *" required>
+      <input class="form_field" type="tel" name="tel" placeholder="Ваш телефон *" required>
+      <label class="form_check">
+        <input type="checkbox" required>
+        <span>Я принимаю <a href="policy.html" target="_blank">условия обработки персональных данных</a></span>
+      </label>
+      <button type="submit" class="btn btn_lg full_width">Отправить</button>
+      <div class="modal_success"><span>✓</span> Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.</div>
+    </form>
+  </div>
+</div>
+<script src="js/vendor/fancybox.umd.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fancybox-init.js"></script>
+</body>
+</html>
