@@ -202,15 +202,6 @@
     });
   });
 
-  /* -------------------- Back to top -------------------- */
-  var toTop = qs('.back_to_top');
-  if (toTop) {
-    toTop.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
   /* -------------------- Scroll reveal (IntersectionObserver) -------------------- */
   var revealTargets = qsa('[data-reveal], [data-reveal-group]');
   if ('IntersectionObserver' in window && revealTargets.length) {
