@@ -440,6 +440,7 @@ textarea.form_field {
   gap: 16px;
   height: var(--header-h);
   transition: height var(--transition);
+  overflow: hidden;
 }
 
 .logo {
@@ -560,11 +561,12 @@ textarea.form_field {
   max-width: 100%;
 }
 
+.top_menu > ul > li.menu_sub:hover .nav_dropdown,
 li.is_open > .nav_dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(0) translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 .nav_dropdown a {
