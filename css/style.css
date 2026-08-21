@@ -440,7 +440,7 @@ textarea.form_field {
   gap: 16px;
   height: var(--header-h);
   transition: height var(--transition);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .logo {
@@ -462,7 +462,7 @@ textarea.form_field {
   gap: 4px;
   flex: 1;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   min-width: 0;
 }
 
@@ -473,6 +473,7 @@ textarea.form_field {
   flex-wrap: nowrap;
   justify-content: center;
   max-width: 100%;
+  overflow: visible;
 }
 
 .top_menu > ul > li {
@@ -528,6 +529,7 @@ textarea.form_field {
   pointer-events: none;
   transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
   box-shadow: 0 24px 48px rgba(0,0,0,.4);
+  z-index: 100;
 }
 
 .nav_dropdown.dop_razdel_manu {
